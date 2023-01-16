@@ -2,8 +2,7 @@
 const word = "11223211";
 
 const isPalindrome = (word) => {
-    for (let i=0; i <= (word.length / 2); i++){
-
+    for (let i=0; i < (word.length / 2); i++){
         if (word[i] !== word[word.length - 1 - i]){
             return false;
         }
@@ -13,7 +12,7 @@ const isPalindrome = (word) => {
 
 
 if (isPalindrome(word)) {
-    console.log("'" + word + "'" + " is a palindrome");
+    console.log("\n '" + word + "'" + " is a palindrome, length: " + word.length + "\n");
 } else {
-    console.log("'" + word + "'" + " is not a palindrome")
+    console.log("\n '" + word + "'" + " is not a palindrome, length: " + word.length + "\n");
 }
