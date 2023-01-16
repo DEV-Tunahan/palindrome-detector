@@ -6,8 +6,8 @@ const isPalindrome = (word) => {
         if (word[i] !== word[word.length - 1 - i]){
             return false;
         }
-        return true;
     }
+    return true;
 }
 
 
